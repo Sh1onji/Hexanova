@@ -29,6 +29,8 @@ body{
 }
 
 .package-box {
+    --accent: #ff5a1f;
+    --overlay: 28, 14, 10;
     background-image:
         linear-gradient(
             rgba(28, 14, 10, 0.85),
