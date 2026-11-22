@@ -7,7 +7,13 @@
 
 .package-box {
   --accent: #7f5af0;
-  --overlay: 10, 12, 30;
+  --overlay: 0, 0, 0;
+  background-color: transparent;
+  border: none;
+}
+
+.package-box .pk-card::before {
+  background: none;
 }
 
 .package-box .pk-grid {

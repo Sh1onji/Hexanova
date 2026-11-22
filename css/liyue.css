@@ -1,37 +1,32 @@
 section.Info {
-    background-image :linear-gradient(rgba(10, 8, 30, 0.65), rgba(10, 8, 30, 0.4)),  url('../images/NewLiyue.avif');
+  background-image: linear-gradient(rgba(10, 8, 30, 0.65), rgba(10, 8, 30, 0.4)), url('../images/NewLiyue.avif');
 }
 
-html::-webkit-scrollbar{
-    display: none;
-}
-body{
-    background-image: linear-gradient(rgba(10, 8, 30, 0.65), rgba(10, 8, 30, 0.4)), url(../images/1175581.jpg);
+html::-webkit-scrollbar {
+  display: none;
 }
 
-baddie{
-  background-color: rgba(60, 12, 12, 0.75);
+body {
+  background-image: linear-gradient(rgba(10, 8, 30, 0.65), rgba(10, 8, 30, 0.4)), url(../images/1175581.jpg);
 }
 
-.package-box{
-  background-color: rgba(60, 12, 12, 0.75);
-  border: 1px solid #c9a24a;
+.package-box {
+  --accent: #e0a72e;
+  --overlay: 28, 14, 12;
+  background: none;
+  border: none;
 }
 
-.pk-card{
-  border: 2px solid #e0a72e;
-  background: #3a1410;
-}
-
-.order-button{
+.order-button {
   background: #c8372d;
 }
+
 .order-button:hover,
-.order-button:focus-visible{
+.order-button:focus-visible {
   background: #e6a12a;
   color: #2a0d0a;
 }
 
 @view-transition {
   navigation: auto;
-}   
+}

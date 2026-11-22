@@ -1,63 +1,48 @@
 section.Info {
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(10, 8, 30, 0.35) 0%,
-            rgba(10, 8, 30, 0.40) 55%,
-            rgba(10, 8, 30, 0.70) 100%
-        ),
-        url('../images/natlan_bg2.png');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(10, 8, 30, 0.35) 0%,
+      rgba(10, 8, 30, 0.40) 55%,
+      rgba(10, 8, 30, 0.70) 100%
+    ),
+    url('../images/natlan_bg2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-body{
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(10, 8, 30, 0.65),
-            rgba(10, 8, 30, 0.65)
-        ),
-        url("../images/natlan_bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
+body {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(10, 8, 30, 0.65),
+      rgba(10, 8, 30, 0.65)
+    ),
+    url("../images/natlan_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
 }
 
 .package-box {
-    --accent: #ff5a1f;
-    --overlay: 28, 14, 10;
-    background-image:
-        linear-gradient(
-            rgba(28, 14, 10, 0.85),
-            rgba(28, 14, 10, 0.85)
-        ),
-        url('../images/natlan_bg.jpg');
-
-    background-size: cover;
-    background-position: center;
-
-    border: 1px solid #ff7a2f;
+  --accent: #ff5a1f;
+  --overlay: 28, 14, 10;
+  background: none;
+  border: none;
 }
 
-.pk-card{
-  border: 2px solid #ff5a1f;
-  background: #2a130d;
-}
-
-.order-button{
+.order-button {
   background: #e8431f;
 }
+
 .order-button:hover,
-.order-button:focus-visible{
+.order-button:focus-visible {
   background: #ffb23f;
   color: #2a130d;
 }
 
 @view-transition {
   navigation: auto;
-}   
+}

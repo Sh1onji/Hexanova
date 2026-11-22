@@ -1,15 +1,125 @@
-@view-transition {
-  navigation: auto;
-}
-
-
-
+/* Collage beside "Inazuma / The Land of the Gods" */
 section.Info {
-    background-image :linear-gradient(rgba(10, 8, 30, 0.65), rgba(10, 8, 30, 0.4)),  url('../images/NewInazuma.png');
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(rgba(10, 8, 30, 0.65), rgba(10, 8, 30, 0.45)), url("../images/Tenshukaku_Concept_Art.webp");
+  background-size: cover;
+  background-position: center;
 }
 
-body{
-    background-image: linear-gradient(rgba(10, 8, 30, 0.65), rgba(10, 8, 30, 0.4), url(../images/HomepageIMG/Nations.jpg));
+section.Info .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: auto;
+  padding: 120px 60px 40px;
+}
+
+section.Info .hero-content {
+  flex: 1 1 42%;
+  max-width: 580px;
+}
+
+section.Info .hero-images {
+  flex: 0 1 650px;
+}
+
+section.Info .hero-bottom {
+  padding: 16px 60px 20px;
+}
+
+/* Package cards matching reference (2x2 dark navy cards, purple border, left text + button, right photo) */
+.pk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.pk-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  align-items: stretch;
+  gap: 16px;
+  background: #17213e;
+  border: 2px solid #7f5af0;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.pk-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.pk-card strong {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.pk-card span {
+  font-size: 11px;
+  line-height: 1.5;
+  color: rgba(240, 248, 255, 0.85);
+}
+
+.pk-card .order-button {
+  margin-top: auto;
+  padding: 8px 16px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  border-radius: 5px;
+}
+
+.pk-card img {
+  width: 230px;
+  height: 100%;
+  min-height: 145px;
+  max-height: 175px;
+  object-fit: cover;
+  border-radius: 6px;
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  section.Info .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 120px 24px 36px;
+    gap: 28px;
+  }
+
+  section.Info .hero-images {
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  section.Info .hero-bottom {
+    padding: 12px 24px 20px;
+  }
+
+  .pk-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .pk-card {
+    grid-template-columns: minmax(0, 1fr) 120px;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .pk-card img {
+    width: 120px;
+    min-height: 120px;
+  }
+}
+
+.package-box .pk-card img {
+  max-height: none;
 }
