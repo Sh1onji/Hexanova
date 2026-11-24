@@ -86,8 +86,11 @@ document.querySelectorAll('input[name="method"]').forEach(r => r.addEventListene
   if (!r.checked) return;
   const isCard = r.value === 'Card';
   cardFields.hidden = !isCard;
-  cardFields.querySelectorAll('input').forEach(i => i.required = isCard);
+    cardFields.querySelectorAll('input').forEach(i => { i.required = isCard; i.disabled = !isCard; });
 }));
+
+
+
 
 /* ---------- input formatting ---------- */
 $('card_number').addEventListener('input', e => {

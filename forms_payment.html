@@ -52,7 +52,7 @@
         </aside>
 
         <!-- RIGHT: form -->
-        <form class="panel" id="booking-form" novalidate="false">
+        <form class="panel" id="booking-form">
             <input type="hidden" name="nation"  id="f-nation">
             <input type="hidden" name="package" id="f-package">
             <input type="hidden" name="total"   id="f-total">
@@ -66,8 +66,9 @@
             </div>
             <div class="field"><label for="phone">Contact number</label>
                 <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+63 9XX XXX XXXX"
-                       pattern="[0-9+\s\-()]{7,20}" title="Enter a valid phone number, e.g. +63 912 345 6789" required></div>
-
+                    pattern="(\+63|0)\s?9\d{2}[\s\-]?\d{3}[\s\-]?\d{4}"
+                    title="Enter a valid PH mobile number, e.g. +63 912 345 6789" required></div>
+           
             <h2>Trip dates</h2>
             <div class="row">
                 <div class="field"><label for="departure_date">Departure date</label>
